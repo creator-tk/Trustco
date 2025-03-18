@@ -213,6 +213,19 @@ ul{
 .founder_text{
   width: 80%;
 }
+.testimonials{
+  padding: 1rem 7rem;
+}
+.testimonial_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.testimonial_card{
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
 @media screen and (max-width: 800px) {
   h1{
     font-size: 2rem;
