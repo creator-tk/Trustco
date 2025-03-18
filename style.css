@@ -185,6 +185,14 @@ ul{
   width: 80%;
   grid-area: right;
 }
+.achievements{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
 @media screen and (max-width: 800px) {
   h1{
     font-size: 2rem;
