@@ -214,7 +214,7 @@ ul{
 .founder_text{
   width: 80%;
 }
-.testimonials{
+.testimonials, .blog_section{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
@@ -227,18 +227,19 @@ ul{
   justify-content: flex-end;
   grid-area: see_all;
 }
-.testimonial_header{
+.testimonial_header, .blog_header{
   display: inline-block;
   grid-area: header_text;
 }
-.testimonial_container{
+.testimonial_container, .card_container{
   grid-column: span 2;
+  grid-area: card;
   display: flex;
   gap: 1rem;
   justify-content: space-around;
-  grid-area: card;
   width: 100%;
   overflow: auto;
+  flex-shrink: 0;
 }
 .testimonial_card{
   border: 1px solid gray;
@@ -252,25 +253,23 @@ ul{
   align-items: center;
 }
 .blog_section{
-  padding: 1rem 6rem;
-}
-.card_container{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  padding: 1rem 4rem;
 }
 .card{
   width: 100%;
   border: 1px solid gray;
   border-radius: 1rem;
+  min-width: 250px;
 }
 .card img{
   width: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
 }
 .card_text{
   padding: 1rem;
 }
+
 @media screen and (max-width: 800px) {
   h1{
     font-size: 2rem;
@@ -366,13 +365,13 @@ ul{
     grid-template-columns: 1fr;
     text-align: center;
   }
-  .testimonials{
+  .testimonials, .blog_section{
     grid-template-columns: 1fr;
-    grid-template-areas: "header_text" "card card" "see_all";
+    grid-template-areas:"header_text" "card" "see_all";
     padding: 1rem 3rem;
     place-items: center;
   }
-  .testimonial_header{
+  .testimonial_header, .blog_header{
     text-align: center;
     grid-column: span 2;
   }
