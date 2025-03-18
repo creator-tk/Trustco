@@ -108,6 +108,20 @@ ul{
   height: 100%;
   width: 100%;
 }
+.brands_container{
+  display: grid;
+  grid-template-columns: 0.2fr 0.9fr;
+  align-items: center;
+  place-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 1rem 4rem;
+}
+.brands_logo{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
 @media screen and (max-width: 800px) {
   h1{
     font-size: 2rem;
