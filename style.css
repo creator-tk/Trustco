@@ -126,6 +126,26 @@ ul{
   align-items: center;
   width: 100%;
 }
+.Video_Section{
+  padding: 4rem 4rem;
+  background-color: #007bff;
+}
+.video_text{
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  align-items: center;
+  gap: 1rem;
+  padding: 0rem 2rem;
+}
+.video_container{
+  position: relative;
+}
+.play_img{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+}
 @media screen and (max-width: 800px) {
   h1{
     font-size: 2rem;
