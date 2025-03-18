@@ -278,6 +278,16 @@ ul{
   background-color: black;
   color: white;
 }
+.footer_section{
+  padding: 4rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  place-items: center;
+
+}
+
 @media screen and (max-width: 800px) {
   *{
     padding: 0rem;
