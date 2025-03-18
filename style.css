@@ -156,7 +156,7 @@ ul{
   display: grid;
   grid-template-columns: 0.2fr 0.8fr;
   gap: 1rem;
-  padding: 1rem 4rem;
+  padding: 1rem 6rem;
 }
 .benefits{
   display: flex;
@@ -169,6 +169,21 @@ ul{
   border-radius: 1rem;
   border: 1px solid #007bff;
   background-color: rgb(240, 240, 240);
+}
+.bridges_section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left right";
+  gap: 1rem;
+  padding: 1rem 4rem;
+  align-items: center;
+}
+.bridge_img{
+  grid-area: left;
+}
+.bridges_text{
+  width: 80%;
+  grid-area: right;
 }
 @media screen and (max-width: 800px) {
   h1{
