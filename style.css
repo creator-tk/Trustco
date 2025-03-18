@@ -120,6 +120,10 @@ ul{
 .brands_logo{
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  gap: 1rem;
+  align-items: center;
   width: 100%;
 }
 @media screen and (max-width: 800px) {
@@ -173,4 +177,9 @@ ul{
   .hero_left, .hero_right {
     text-align: center;
   }
+  .brands_container{
+    grid-template-columns: 1fr;
+    margin: 1rem 2rem;
+  }
+
 }
