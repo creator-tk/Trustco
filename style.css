@@ -4,6 +4,7 @@
   line-height: 1.3;
   box-sizing: border-box;
   transition: 100ms;
+  scrollbar-width: none;
 }
 :root {
   --primary-color: #007bff;
@@ -214,17 +215,61 @@ ul{
   width: 80%;
 }
 .testimonials{
-  padding: 1rem 7rem;
-}
-.testimonial_container{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  padding: 1rem 5rem;
+  align-items: center;
+  grid-template-areas: "header_text see_all" "card card";
+}
+.see_all_btn{
+  display: flex;
+  justify-content: flex-end;
+  grid-area: see_all;
+}
+.testimonial_header{
+  display: inline-block;
+  grid-area: header_text;
+}
+.testimonial_container{
+  grid-column: span 2;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  grid-area: card;
+  width: 100%;
+  overflow: auto;
 }
 .testimonial_card{
+  border: 1px solid gray;
+  padding: 1rem;
+  border-radius: 1rem;
+  min-width: 250px;
+}
+.testimonial_crew{
   display: flex;
   gap: 0.5rem;
   align-items: center;
+}
+.blog_section{
+  padding: 1rem 6rem;
+}
+.card_container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.card{
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 1rem;
+}
+.card img{
+  width: 100%;
+  object-fit: cover;
+}
+.card_text{
+  padding: 1rem;
 }
 @media screen and (max-width: 800px) {
   h1{
@@ -320,5 +365,15 @@ ul{
   .founder{
     grid-template-columns: 1fr;
     text-align: center;
+  }
+  .testimonials{
+    grid-template-columns: 1fr;
+    grid-template-areas: "header_text" "card card" "see_all";
+    padding: 1rem 3rem;
+    place-items: center;
+  }
+  .testimonial_header{
+    text-align: center;
+    grid-column: span 2;
   }
 }
