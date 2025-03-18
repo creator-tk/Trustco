@@ -256,4 +256,19 @@ ul{
     flex-direction: column;
     gap: 1rem;
   }
+  .bridges_section{
+    grid-template-columns: 1fr;
+    grid-template-areas: "right" "left";
+    padding: 1rem;
+    align-items: center;
+    place-items: center;
+    gap: 2rem;
+  }
+  .bridges_text{
+    text-align: center;
+  }
+  .bridge_img{
+    width: 100%;
+    text-align: center;
+  }
 }
