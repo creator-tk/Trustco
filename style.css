@@ -138,14 +138,17 @@ ul{
   gap: 1rem;
   padding: 0rem 2rem;
 }
-.video_container{
+.video_img_container{
   position: relative;
 }
 .play_img{
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10%;
 }
+
 @media screen and (max-width: 800px) {
   h1{
     font-size: 2rem;
@@ -201,5 +204,8 @@ ul{
     grid-template-columns: 1fr;
     margin: 1rem 2rem;
   }
-
+  .video_text{
+    flex-direction: column;
+    padding: 0;
+  }
 }
