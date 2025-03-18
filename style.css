@@ -203,7 +203,7 @@ ul{
   flex-wrap: wrap;
   width: 100%;
 }
-.founder{
+.founder, .customer_service{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
@@ -269,7 +269,10 @@ ul{
 .card_text{
   padding: 1rem;
 }
-
+.customer_service{
+  background-color: black;
+  color: white;
+}
 @media screen and (max-width: 800px) {
   h1{
     font-size: 2rem;
