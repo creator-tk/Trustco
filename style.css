@@ -342,7 +342,53 @@ ul{
 .credit_right img{
   width: 100%;
 }
-
+.service_page{
+  padding: 0rem 4rem;
+}
+.contact_header{
+  text-align: center;
+}
+.contact_container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: center;
+  place-items: center;
+  margin-bottom: 2rem;
+}
+.contact_card{
+  max-width: 400px;
+  border: 1px solid rgb(208, 200, 200);
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: white;
+}
+.contact_card *{
+  margin: 1rem 0rem;
+}
+.contact_card img{
+  width: 15%;
+}
+.form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 1rem;
+}
+.text_area{
+  grid-column: span 2;
+}
+.form input, .form textarea{
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid gray;
+}
+.submit_form{
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 @media screen and (max-width: 800px) {
   *{
     padding: 0rem;
