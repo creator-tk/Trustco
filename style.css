@@ -506,8 +506,25 @@ ul{
   .footer_logo_container, .footer_text{
     grid-column: span 2;
   }
+  .developer_section{
+    max-width: 300px;
+  }
+  .developer_section img{
+    width: 50px;
+  }
   .credits_section{
     grid-template-columns: 1fr;
     grid-template-areas: "credit_center" "credit_right" "credit_left";
+  }
+  .contact_container, .form{
+    grid-template-columns: 1fr;
+  }
+  .form input{
+    grid-column: span 2;
+  }
+  .submit_form{
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
   }
 }
