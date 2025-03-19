@@ -460,4 +460,8 @@ ul{
   .footer_logo_container, .footer_text{
     grid-column: span 2;
   }
+  .credits_section{
+    grid-template-columns: 1fr;
+    grid-template-areas: "credit_center" "credit_right" "credit_left";
+  }
 }
